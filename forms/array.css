@@ -1,0 +1,355 @@
+@media all{
+    body{
+ 
+    
+        font-weight: bold;
+        color:rgb(40, 5, 236)
+    }
+    figure#logo-welcome{
+        display: inline-flex;
+        color:black;
+        
+    }
+    img#Logo{
+           width:80px;
+           height:auto;
+    }
+    
+form#Entry {
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    min-width: 300px;
+    max-width:600px;
+    margin: 2%;
+}
+.label-question{
+font-size: x-large;
+color:rgb(224, 96, 96);
+text-shadow: 0.5px 0.5px blue;
+}
+label{
+  min-width: 80px;
+}
+.field {
+    display: inline-flex;
+}
+.form-label {
+    padding-right: 10px;
+    width: 110px;
+}
+.field-grouping {
+    display: block;
+}
+#car-Small{
+  width:150px;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+.button-area {
+    margin-top: 20px;
+}
+.required::after {
+    content: "*";
+    color: red;
+}
+.hidden {
+    display : none;
+}
+
+/* Force the Grid to display in a specific style that looks like a spreadsheet display */
+div#ItemsEntered {
+    display : block;
+}
+div.Row {
+    display: block;
+    font-size: 15px;
+}
+div#ItemsEntered span {
+    display: inline-block;
+}
+
+/* Style the header of the grid to be different than the rows in the grid*/
+header {
+    display : block;
+    background-color :royalblue;
+    color : white;
+}
+
+/* Style the even lines in the grid differently than the odd lines */
+div.Row.even-row {
+    background-color:rgb(176, 212, 236)
+}
+.small-image img {
+  width: 90%;
+  height:90%;
+  margin:0px;
+  padding:0px;
+ 
+}
+.medium-image {
+  /* indicate where we can it to display */
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 45%;
+  height: auto;
+  border: 1px solid slateblue;
+  border-radius: 5px;
+}
+
+.medium-image {
+  /* indicate where we can it to display */
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 450px;
+  height: auto;
+  border: 1px solid slateblue;
+  border-radius: 5px;
+}
+
+/* Style the individual columns */
+.rightalign{
+  float:right;
+  width:35%;
+  left:65%;
+ margin-right:10%;
+}
+.rightalign1{
+ 
+ width:100%;
+ margin:0px;
+ padding:0px;
+
+}
+.grid-container1 {
+
+  display:inline-flex;
+  text-align: center;
+  max-width: 400px;
+ 
+}
+.grid-container {
+
+ 
+  text-align: center;
+ 
+}
+.grid-item1{
+  display: inline-flex;
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+/* Style the action area buttons in the grid to behave like Hyperlinks */
+
+
+.InputInError {
+    background-color:rgb(255, 174, 0);
+}
+.problem-description {
+    background-color: yellow;
+    padding: 7px;
+    color: rgb(40, 5, 236);
+    margin: 10px;
+}
+#Error-Msgs {
+    margin-top: 20px;
+    color:rgb(236, 78, 15);
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 5px;
+}
+}
+@media print{
+    body{
+        background-color: transparent;
+        background-image: none;
+    }
+}
+@media all {
+    #errmessage {
+      border: 2px solid red;
+      margin-top: 20px;
+      border-radius: 5px;
+      padding: 10px;
+      color: black;
+    }
+ 
+  }
+  @media all {
+
+  
+    /* This draws the outside rectangle of our pop-up */
+    .msg-icon {
+        display: inline-block;
+        padding: 10px 20px;
+        /* color: #fff; */
+        box-sizing: border-box;
+        max-width: 300px;
+        min-width: 80px;
+        min-height: 38px;
+        position: absolute;
+        top: 22px;
+        left: 130px;
+        background-color: rgba(245, 215, 171, 0.918);
+    }
+    /* This draws the text inside the rectangle, so don't set the background-color */
+      .msg-icon:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: 2px solid  #010d41;
+        border-radius: 2px;
+        box-sizing: border-box;
+        clip-path: polygon(0% 105%, 0% 0%, 105% 0%, 105% 105%, 43px 105%, 43px 80%, 21px 80%, 21px 105%);
+      }
+    /* This draws the arrow  pointer */
+    .msg-icon:after {
+        background-color:rgba(245, 215, 171, 0.918);
+        content: "";
+        position: absolute;
+        display: block;
+        width: 25px;
+        height: 20px;
+        background: #010d41;
+        top: calc(100% - 1px);
+        left: 20px;
+        box-sizing: border-box;
+        clip-path: polygon(0 0, 0% 100%, 100% 0%, calc(100% - 3px) 0, 1px calc(100% - 3px), 1px 0);
+      }
+  
+    .hidden {
+        display: none;
+    }
+  }
+  @media all {
+    div#show-grid {
+      display: block;
+      width: 80%;
+    }
+    header#header-row {
+      background-color:darkslategray;
+      color: white;
+      display: inline-flex;
+    }
+    .row {
+      display: inline-flex;
+    }
+  
+    
+  
+    #hdr-actions,
+    .row-actions  {
+      width: 200px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+  
+    span.row-editAction {
+      margin-right: 10px;
+    }
+  
+    .even-row {
+      background-color:lightgreen;
+    }
+  
+    .row-editAction:hover,
+    .row-deleteAction:hover {
+      cursor: pointer;
+      color:mediumvioletred;
+    }
+  }  
+  @media all {
+    div#show-grid {
+      display: block;
+      width: 80%;
+    }
+    header{
+      background-color:darkslategray;
+      color: white;
+      display: inline-flex;
+    }
+    .row {
+      display: inline-flex;
+    }
+  
+   
+  
+    #hdr-actions,
+    .row-actions  {
+      width: 200px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+  
+    span.row-editAction {
+      margin-right: 10px;
+    }
+  
+    .even-row {
+      background-color:lightgreen;
+    }
+  
+    .row-editAction:hover,
+    .row-deleteAction:hover {
+      cursor: pointer;
+      color:mediumvioletred;
+    }
+    span#hdr-Id,
+span.Row-Id {
+    width: 40px;
+}
+
+
+
+
+span#hdr-Email,
+span.Row-Email,
+
+span#hdr-phonetype,
+span.Row-PhoneType,
+
+span#hdr-grossincome,
+span.Row-GrossIncome,
+
+span#hdr-current,
+span.Row-Current
+{
+    width: 100px;
+    text-align: center;
+}
+span#hdr-house,
+span.Row-House,
+
+span#hdr-Postal,
+span.Row-Postal,
+span#hdr-Name,
+span.Row-Name,
+span#hdr-age,
+span.Row-Age,
+span#hdr-gender,
+span.Row-Gender
+{
+    width: 60px;
+    text-align: center;
+}
+span#hdr-Actions,
+span.Row-Actions,
+span#hdr-number,
+span.Row-Number,
+span#hdr-Address,
+span.Row-Address,
+span#hdr-Accounts,
+span.Row-Accounts {
+    width: 180px;
+    text-align: center;
+}
+  }
+  

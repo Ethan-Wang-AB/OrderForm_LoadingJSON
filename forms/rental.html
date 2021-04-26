@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Rental Form</title>
+	<script type="text/javascript" src="rental.js"></script>
+	<script type="text/javascript" src="/rentalcar/StandardJSFunctions.js"></script>
+	<link type="text/css" rel="stylesheet" href="rental.css">
+	<link type="text/css" rel="stylesheet" href="array.css">
+</head>
+
+<body>
+	<header class="top">
+		<figure id="logo-welcome">
+			<img id="Logo" src="pics/logo.png" alt="Doggy logo">
+			<h3>Dodgy Brakes Car Rental</h3>
+			<img id="Logo" src="pics/logo.png" alt="Doggy logo">
+		
+		</figure>
+	
+		
+	</header>
+ <div id="dtfield"><span id="dtfield" onchange="initFunction()"></span>
+      
+</div>
+<a href="/rentalcar/index.html">Back to index</a>
+
+	<div id="search-input-area">
+		<form>
+		<div class='dialog-text'>Search on Last Name</div>
+		<div class="input-field">
+
+			<input type="text" id="lastname" size="30" id="lastname" placeholder="Canton">
+			<span class="search-type">start with</span>
+		</div>
+		<input type="reset" value="clear" onclick="	ToggleClassState('rentalform','hidden',true)" >
+	</form>
+	</div>
+
+
+	<div id="output-area" class='hidden'>
+		<div id="searchvalue">
+			<!-- HTML will go here to say what you were searching on-->
+	
+		</div>
+		<div id="results">
+			<div id="searchresults" class="hidden">
+				<!-- see https://www.w3schools.com/tags/tag_template.asp -->
+				<template id="card-template">
+					<!-- This is a card we want to clone -->
+					<div class="card">
+						<div class="card-match">
+							<label>Match</label>
+							<span class="card-id"></span>
+						</div>
+						<div class="card-field">
+							<label>Last Name:</label>
+							<div class="card-lastname"></div>
+						</div>
+						<div class="card-field">
+							<label>First Name:</label>
+							<div class="card-firstname"></div>
+						</div>
+			<div class="card-field">
+							<label>Address:</label>
+							<div class="card-address"></div>
+						</div>
+						<div class="card-field">
+							<label>state_province</label>
+							<div class="card-state_prov"></div>
+						</div>
+						<div class="card-field">
+							<label>E-mail:</label>
+							<div class="card-email"></div>
+						</div>
+						<div class="card-field">
+							<label>Phone:</label>
+							<div class="card-phone"></div>
+						</div> 
+						<div class="card-field">
+							<div class="card-choose"></div>
+						</div>
+						<div class="card-field">
+						</div>
+					</div>
+				</template>
+				<div id="cards" class='hidden'>
+
+				</div>
+
+			</div>
+		</div>
+		<div id="rentalform" class="hidden">
+
+		</div>
+	</div>
+
+</body>
+
+</html>

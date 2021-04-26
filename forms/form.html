@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Wild Rose Country Finance Registration.</title>
+    <script type='text/javascript' src='StandardJSFunction.js'></script>
+
+
+</head>
+
+<body>
+    <figure id="logo-welcome">
+
+  
+   
+    </figure>
+
+    <form id="Entry" onsubmit="calctotal(); return false;" >
+    
+        <div class="grid-container1">
+             <div id="fullname">
+
+
+        </div>
+  
+        <figure id="car1-Small1" class="small-image" >
+            <img id="car-Small" src="pics/small-compact.jpg" alt="small compact car">
+        </figure>
+        <figure id="car1-Small2" class="small-image hidden" >
+            <img id="car-Small" src="pics/small-mediumsize.jpg" alt="smal medium size car">
+        </figure>
+        <figure id="car1-Small3" class="small-image hidden" >
+            <img id="car-Small" src="pics/small-luxury.jpg" alt="small luxury car">
+        </figure>
+        <figure id="car1-Small4" class="small-image hidden">
+            <img id="car-Small" src="pics/small-van.jpg" alt="small van car">
+        </figure>
+     </div>
+        <div id="car-type" class="field-grouping" >
+
+            <label class="label-question" id="carT">Rental Car Type?</label>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item1">
+                <input type="radio" id="compact" name="cartype" value=15 checked required onclick="	ToggleClassState('car1-Small1','hidden',false), 	ToggleClassState('car1-Small2','hidden',true),	ToggleClassState('car1-Small3','hidden',true),	ToggleClassState('car1-Small4','hidden',true);">
+                <label for="compact">Compact $15/day</label>
+
+           
+            </div>
+            <div class="grid-item1">
+                <input type="radio" id="midsize" name="cartype" value=25 onclick="	ToggleClassState('car1-Small1','hidden',true), 	ToggleClassState('car1-Small2','hidden',false),	ToggleClassState('car1-Small3','hidden',true),	ToggleClassState('car1-Small4','hidden',true);">
+
+                <label for="midsize">Mid-size $20/day</label>
+
+             
+            </div>
+            <div class="grid-item1">
+                <input type="radio" id="car-luxury" name="cartype" value=35 onclick="	ToggleClassState('car1-Small1','hidden',true), 	ToggleClassState('car1-Small2','hidden',true),	ToggleClassState('car1-Small3','hidden',false),	ToggleClassState('car1-Small4','hidden',true);">
+
+                <label for="car-luxury">Luxury  $35/day</label>
+
+
+            
+      
+            </div>
+            <div class="grid-item1">
+                <input type="radio" id="car-van" name="cartype" value=40 onclick="	ToggleClassState('car1-Small1','hidden',true), 	ToggleClassState('car1-Small2','hidden',true),	ToggleClassState('car1-Small3','hidden',true),	ToggleClassState('car1-Small4','hidden',false);">
+
+                <label for="car-van">Van/Truck  $40/day</label>
+
+
+
+            
+            </div>
+        </div>
+
+        <label class="label-question">Choose additions:</label>
+
+        <div class="grid-container">     
+            <div class="grid-item1"> 
+                <input type="checkbox" id="roof" name="options" value=5>
+        <label for="roof">Roof Rack or Bicycle Rack extra $5/day</label>    </div>
+       
+        <div class="grid-item1"> 
+            <input type="checkbox" id="HaveAccount-RRSP" name="options" value=10>
+        <label for="gps">GPS extra $10</label>    </div>
+        <div class="grid-item1"> 
+            <input type="checkbox" id="childseat" name="options" value=0>
+
+        <label for="childseat">Child Seat (free)</label>    </div>
+    </div>
+
+        <div id="rental_days" class="field">
+            <label for="days" class="form-label required">Rental Days:</label>
+            <input type="number" id="days" name="days" placeholder="1" max="30" min="1" required
+                data-helpMsg="Please enter days the customer wants to rent between 1-30days">
+
+        </div>
+
+        <div class="button-area">
+            <input type="submit" id="adding" value="Submit">
+
+            <input type="reset" id="clear" value="Clear">
+        </div>
+  
+        </div>
+    </form>
+    <div id="orderdetail">
+       <div id="userinfo"></div>
+       <div id="invoices"></div>
+    </div>
+
+    </form>
+</body>
+
+</html>

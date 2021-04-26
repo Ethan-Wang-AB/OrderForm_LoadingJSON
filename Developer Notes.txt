@@ -1,0 +1,52 @@
+step 01 get small picture of different type of cars
+
+compact car:https://unsplash.com/photos/O7OWhsNKFPk
+mid-size:car:https://unsplash.com/photos/JR3etRoFj9o
+luxury car:https://unsplash.com/photos/l7hHSjiGAH4
+van car:https://unsplash.com/photos/VsR-c-wuBUs
+
+Step 02 use paint 3d to design logo and background pattern for this application
+
+step 03 use lab 10 , lab 04 and lab 07 as sample codes.
+
+step 04 create index page, having a link to link searching client form.
+
+step 05 create rental form for searching client on inside json file
+-> modify loading json file
+-> load searching key word last name
+-> search result and show result
+-> having a hyper link for ordering for this client to load client info and load the page of order detail
+step 06 create form for ordering detail
+-> add car type
+-> add each car small picture behind radio button of car type
+-> add check box for options
+-> add submit button and reset button
+
+step 07 modify javascript file 
+-> set calculation function for calculate cost
+-> set loading search result in cards view
+-> set hyper link for each card 
+-> include client info into rental form inside ajax call after choosing a specific client
+so after click the link "order for this cliend" it will automatically call function show client info.
+     
+step 08 modify css file to make it look better
+-> modify invoice spans width and display to make it like a table
+-> modify background color and blend mode to make it feel more comfortable for index page and rental form page.
+
+step 09 add alt content for each image
+
+step 10 modify card view by only displaying everything
+
+step 11 add button for not a client
+
+step 12 modify javascript file 
+-> add function for not a client
+-> load different content for not a client or current client
+-> modify invoice part so it can load client info correctly
+
+step 13 modify css file to adjust view of the web application
+
+step 14 add a link for back to index page on rental form page
+
+
+
